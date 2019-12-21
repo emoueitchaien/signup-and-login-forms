@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sign Up</title>
+	<!-- <script type="text/javascript">
+		alert('HELLO JS!!');
+	</script> -->
+	<link rel="stylesheet" type="text/css" href="SignUp.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<!-- <script type="text/javascript" src="validd.js">
+		document.write("Greetings From Javascript!!")
+	</script> -->
+</head>
+
+<body>
+	<h1 align="center">Create a new account!</h1>
+	<h3>It's&nbsp; quick&nbsp;  And&nbsp;  easy!&nbsp;  Let's&nbsp;   fill&nbsp;   the&nbsp;   form&nbsp;   below!!</h3>
+	<div class="center">
+		<form action="SignIn.html" target="_self" >
+			<fieldset class="expand"> 
+				<legend class ="leg1">Personal Information</legend>
+				<div class="center2">
+					<div class ="text1">
+						<label >First Name :</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;<label>Last Name :</label> 
+						<br><br>
+						<input class="inp" type="text" required="" placeholder="Your First Name" id="fname" name="firstname"autofocus onkeyup="validateName()"><span id="errorName"></span>
+						&emsp; &emsp;&emsp;
+						<input class="inp" type="text" placeholder="Your Last Name" name="lastname" required=""><br><br><br>
+						<label>Gender :</label> &emsp;
+						<input type="radio" name="sex" value="male" checked="sex" required=""><label>Male</label>
+						&emsp;<input type="radio" name="sex" value="female" required=""><label>Female</label>
+						&emsp;<input type="radio" name="sex" value="female" required=""><label>Other</label><br><br><br>
+						<label>Date of birth :&emsp; </label><input class="inp" type="date"> 
+					</div>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset class="expand">
+				<legend class="leg1">Contact Details</legend>
+				<div class="center2">
+					<div class ="text1">
+						<label>Phone :</label>&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp; <label>Address :</label><br><br>
+						<input class="inp" type="text" placeholder="Your Phone Number" name="contact" required="">&emsp;&emsp;&emsp;
+						<input class="inp" type="text" placeholder="Your Permanent Address" name="address" required=""><br>
+						<!-- <a href="mohan.html">CALL ME!!</a> --><br>
+						<label>E-mail :</label><br><br>
+						<input class="inp2" type="text" placeholder="your_name@domain" name="mail" required=""><br>
+						<br><label>Profile Photo:&emsp;</label>
+						<input class="" type="file" placeholder="Upload your photo!" name="" required=""><br>
+					</div>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset class="expand">
+				<legend class="leg1">Password</legend>
+				<div class="center2">
+					<div class ="text1">
+						<label>New Password :</label>&emsp;&emsp; <input class="inp" type="password" placeholder="Password" name="Password" required=""><br><br>
+						<label>Confirm Password :</label>&emsp;
+						<input class="inp" type="password" placeholder="Password" name="Password" required=""><br>
+						<!-- <a href="mohan.html">CALL ME!!</a> --><br>
+					</div>
+				</div>
+			</fieldset>
+			<br>
+			<br>
+			<!-- <input class="sub" type="submit" name="Done" value="Sign Up"><br> -->
+			<div class="center3">
+				<!-- <a href="SignIn.html" class="button">Sign up!</a> -->
+				<input class="button" type="submit" name="Done" value="Sign Up!"><br>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
